@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
+*{
+    font-family: League Spartan;
+}
 body {
     font-family: League Spartan;
     margin: 0;
     padding: 0;
     background-image: url('../assets/img/gradient.png'); /* Cambia esto por la ruta de tu imagen */
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: repeat;
     background-position: 0 0;
-    color: #333;2
+    color: #333;
 }
+
 
 .header {
     display: flex;
@@ -36,7 +40,8 @@ body {
     font-size: 40px;
 }
 .subtitle {
-    font-size: 0.8em; /* Tamaño más pequeño */
+    font-size:20px; /* Tamaño más pequeño */
+    font-family: League Spartan;
 }
 
 .nav-bar {
@@ -48,11 +53,20 @@ body {
     color: #333;
     text-decoration: none;
     font-weight: bold;
-    transition: opacity 0.4s ease-in-out;
+    transition: all 0.3s ease; /* Añadir una transición suave */
+}
+
+/* Estilo hover para los enlaces del menú de navegación */
+.nav-bar a:hover {
+    color: #ee7152; /* Cambiar el color del texto al hacer hover */
+   
+    border-radius: 5px; /* Añadir borde redondeado para que la sombra se vea mejor */
+    padding: 5px; /* Añadir padding para dar más espacio a la sombra */
 }
 
 .texto-hero h1{
     font-size: 35px;
+    font-family: League Spartan;
     
 }
 
@@ -63,6 +77,7 @@ body {
     border-right: 2px solid;
     white-space: nowrap;
     overflow: hidden;
+    font-family: League Spartan;
 }
 
 .typing {
@@ -73,4 +88,37 @@ body {
     from, to { border-color: transparent; }
     50% { border-color: black; }
 }
+
+.about-me {
+    padding: 60px 0;
+    font-family: League Spartan;
+    
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.about-me a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.about-me a:hover {
+    color: #EE8F52;
+}
+
+.about-me .btn {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 
