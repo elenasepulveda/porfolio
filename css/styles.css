@@ -95,20 +95,20 @@ body {
 }
 
 .about-me {
-  padding: 60px 0;
+  padding: 60px ;
   font-family: League Spartan;
   background-color: #e06445;
 }
 
 .about-me h2 {
   font-size: 2rem;
-  margin-bottom: 20px;
+ 
   font-family: League Spartan;
 }
 
 .about-me p {
   font-size: 1.1rem;
-  margin-bottom: 10px;
+ 
 }
 
 .about-me a {
@@ -121,6 +121,8 @@ body {
 .about-me a:hover {
   color: whitesmoke;
 }
+
+
 
 .about-me .btn {
   font-size: 1rem;
@@ -146,6 +148,10 @@ body {
 .wave-animation {
     animation: waveAnimation 2s ease-in infinite alternate;
     transform-origin: center bottom; /* Establece el origen de la transformación */
+}
+
+.wave {
+    margin-bottom: 0;
 }
 
 @keyframes waveAnimation {
