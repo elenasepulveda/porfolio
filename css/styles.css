@@ -234,3 +234,29 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+/*Burbujas tecnologias*/
+.technologies {
+  
+  padding: 60px 0;
+}
+
+.tech-bubble {
+  background-color: #e06445;
+  border-radius: 50%;
+    width: 100px; /* Asegúrate de que el ancho y la altura sean iguales */
+    height: 100px;
+ 
+  padding: 20px 30px;
+  margin: 10px;
+  
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.tech-bubble:hover {
+  transform: scale(1.1);
+}
