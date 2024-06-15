@@ -79,16 +79,7 @@ body {
   color: #333;
 }
 
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-    background-color: whitesmoke;
-  }
-  50% {
-    border-color: black;
-  }
-}
+
 
 .imagenYo img{
     background-color: whitesmoke;
@@ -98,6 +89,7 @@ body {
   padding: 60px ;
   font-family: League Spartan;
   background-color: #e06445;
+  margin-top: -1%;
 }
 
 .about-me h2 {
@@ -147,7 +139,7 @@ body {
 
 .wave-animation {
     animation: waveAnimation 2s ease-in infinite alternate;
-    transform-origin: center bottom; /* Establece el origen de la transformación */
+    transform-origin: center bottom; 
 }
 
 
@@ -174,8 +166,4 @@ body {
 .fade-in.visible {
     opacity: 1;
     
-}
-
-.wave {
-    margin-bottom: 0;
 }
