@@ -47,14 +47,17 @@ body {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+ 
   transition: all 0.3s ease; /* Añadir una transición suave */
 }
+.navbar-nav .nav-link {
+    font-size: 20px; /* Ajusta el tamaño de fuente según sea necesario */
+    
+    
+}
 
-/* Estilo hover para los enlaces del menú de navegación */
-.nav-bar a:hover {
-  color: #e06445; /* Cambiar el color del texto al hacer hover */
- 
-  padding: 3px; /* Añadir padding para dar más espacio a la sombra */
+.navbar-toggler-icon {
+    color: #333; /* Color del ícono del botón */
 }
 
 .texto-hero h1 {
