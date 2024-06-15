@@ -150,9 +150,7 @@ body {
     transform-origin: center bottom; /* Establece el origen de la transformación */
 }
 
-.wave {
-    margin-bottom: 0;
-}
+
 
 @keyframes waveAnimation {
     0% {
@@ -178,3 +176,6 @@ body {
     
 }
 
+.wave {
+    margin-bottom: 0;
+}
