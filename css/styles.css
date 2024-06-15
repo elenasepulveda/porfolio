@@ -1,124 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
-*{
-    font-family: League Spartan;
+* {
+  font-family: League Spartan;
 }
 body {
-    font-family: League Spartan;
-    margin: 0;
-    padding: 0;
-    background-image: url('../assets/img/gradient.png'); /* Cambia esto por la ruta de tu imagen */
-    background-size: cover;
-    background-attachment: repeat;
-    background-position: 0 0;
-    color: #333;
+  font-family: League Spartan;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: beige;
 }
 
-
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    margin: 10px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px;
 }
 
 .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
-
 
 .header h1 {
-    margin: 0;
-    font-size: 1.5em;
-    font-weight: bold;
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-.name h1{
-    font-size: 40px;
+.name h1 {
+  font-size: 40px;
 }
 .subtitle {
-    font-size:20px; /* Tamaño más pequeño */
-    font-family: League Spartan;
+  font-size: 20px; /* Tamaño más pequeño */
+  font-family: League Spartan;
 }
 
 .nav-bar {
-    display: flex;
+  display: flex;
 }
 
 .nav-bar a {
-    margin: 0 10px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease; /* Añadir una transición suave */
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Añadir una transición suave */
 }
 
 /* Estilo hover para los enlaces del menú de navegación */
 .nav-bar a:hover {
-    color: #ee7152; /* Cambiar el color del texto al hacer hover */
-   
-    border-radius: 5px; /* Añadir borde redondeado para que la sombra se vea mejor */
-    padding: 5px; /* Añadir padding para dar más espacio a la sombra */
+  color: #e06445; /* Cambiar el color del texto al hacer hover */
+ 
+  padding: 3px; /* Añadir padding para dar más espacio a la sombra */
 }
 
-.texto-hero h1{
-    font-size: 35px;
-    font-family: League Spartan;
-    
+.texto-hero h1 {
+  font-size: 35px;
+  font-family: League Spartan;
+  color: #333 !important;
 }
 
 
 
 #typed-text {
-    display: inline;
-    border-right: 2px solid;
-    white-space: nowrap;
-    overflow: hidden;
-    font-family: League Spartan;
+  display: inline;
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: League Spartan;
+  color: #333;
 }
 
 .typing {
-    animation: blink-caret 0.75s step-end infinite;
+  animation: blink-caret 0.75s step-end infinite;
+  color: #333;
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+  from,
+  to {
+    border-color: transparent;
+    background-color: whitesmoke;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+.imagenYo img{
+    background-color: whitesmoke;
 }
 
 .about-me {
-    padding: 60px 0;
-    font-family: League Spartan;
-    
+  padding: 60px 0;
+  font-family: League Spartan;
+  background-color: #e06445;
 }
 
 .about-me h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: League Spartan;
 }
 
 .about-me p {
-    font-size: 1.1rem;
-    margin-bottom: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
 }
 
 .about-me a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 .about-me a:hover {
-    color: #EE8F52;
+  color: whitesmoke;
 }
 
 .about-me .btn {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
+.miBoton  {
+    padding: 10px 50px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #333; /* Borde del botón */
+    border-radius: 25px; /* Bordes redondeados */
+    transition: 0.3 ease;
+    
+}
+
+.miBoton:hover {
+    transition: 0.3s ease;
+    background-color: #333; /* Color de fondo al pasar el mouse */
+}
+
+.wave-animation {
+    animation: waveAnimation 2s ease-in infinite alternate;
+    transform-origin: center bottom; /* Establece el origen de la transformación */
+}
+
+@keyframes waveAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.1); /* Ajusta la escala vertical según el efecto deseado */
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+/*Animaciones para elementos al hacer scroll*/
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease; /* Ajusta la duración y la función de tiempo según prefieras */
+    transform: translateY(20px); /* Opcional: Agrega un ligero desplazamiento inicial */
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0); /* Desplazamiento final */
+}
 

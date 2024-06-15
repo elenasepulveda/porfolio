@@ -5,7 +5,7 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
     const typedTextElement = document.getElementById('typed-text');
-    const textArray = ["Bienvenid@ a mi porfolio.", "Soy Software Developer."];
+    const textArray = ["Bienvenid@ a mi porfolio.", "Welcome to my portfolio."];
     const typingDelay = 100;
     const erasingDelay = 60;
     const newTextDelay = 2000; // Delay between current and next text
@@ -36,3 +36,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setTimeout(type, newTextDelay + 250);
 });
+
+
+const elements = document.querySelectorAll('.fade-in');
+
+function checkVisibility() {
+    elements.forEach((element) => {
+        if (isElementInViewport(element)) {
+            element.classList.add('visible');
+        }
+    });
+}
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+window.addEventListener('scroll', checkVisibility);
+window.addEventListener('resize', checkVisibility);
+
+// Check visibility on page load
+document.addEventListener('DOMContentLoaded', checkVisibility);
