@@ -148,3 +148,14 @@ document.addEventListener('DOMContentLoaded', checkVisibility);
       };
     }
   }());
+
+  document.querySelectorAll('.circle').forEach(circle => {
+    circle.addEventListener('mouseover', () => {
+        circle.style.transform = 'scale(1.2)';
+        circle.style.transition = 'transform 0.2s';
+    });
+    circle.addEventListener('mouseout', () => {
+        circle.style.transform = 'scale(1)';
+        circle.style.transition = 'transform 0.2s';
+    });
+});
